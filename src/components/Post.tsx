@@ -1,3 +1,4 @@
+import { memo } from "react";
 import type { Post as PostType } from "../types/Post";
 
 interface PostProps {
@@ -20,4 +21,4 @@ function Post({ post }: PostProps) {
   );
 }
 
-export default Post;
+export default memo(Post);
