@@ -32,6 +32,7 @@ main {
 
 section > h2 {
   margin-bottom: 20px;
+  color: #222;
 }
 
 article {
@@ -44,6 +45,7 @@ article {
 
 article h2 {
   margin-top: 0;
+  color: #222;
 }
 
 article p {
