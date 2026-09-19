@@ -82,7 +82,7 @@ I used `npm run build` to check that the TypeScript and React code builds succes
 
 ## Components
 
-I used functional components for this project because they are simple and easy to work with.
+I used functional components for this project because they are the modern standard in React and work well with hooks like `useEffect`, which I used inside the `withLogger` HOC. Functional components are simpler to read and write compared to class components, and they do not require managing `this` or lifecycle methods like `componentDidMount` and `componentWillUnmount`. React also recommends functional components for new projects, and they integrate naturally with `React.memo` for optimization.
 
 The `Header` component shows the Dev Insights name and the New Post link.
 
