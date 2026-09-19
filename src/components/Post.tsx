@@ -5,15 +5,17 @@ interface PostProps {
 }
 
 function Post({ post }: PostProps) {
+  const isFeaturedAuthor = post.author === "Esther";
+
   return (
-    <article>
+    <article className={isFeaturedAuthor ? "featured-post" : ""}>
       <h2>{post.title}</h2>
 
-      <p>By {post.author}</p>
+      <p className="post-author">By {post.author}</p>
 
       <p>{post.content}</p>
 
-      <p>{post.date}</p>
+      <p className="post-date">{post.date}</p>
     </article>
   );
 }
