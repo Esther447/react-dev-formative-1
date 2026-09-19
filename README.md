@@ -1,32 +1,130 @@
-# React + TypeScript + Vite
+# Dev Insights - Mini Blog
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+This is a small Mini Blog project I built using React, TypeScript, and Vite.
 
-Currently, two official plugins are available:
+I made this project for my React formative assessment. The main things I wanted to practice were React components, TypeScript, CSS styling, optimization, and Higher-Order Components.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Features
 
-## React Compiler
+* Dev Insights header
+* New Post link
+* Three sample blog posts
+* Reusable Post component
+* TypeScript type for posts
+* CSS and inline styling
+* Conditional styling
+* React.memo
+* Unique keys for posts
+* withLogger HOC
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Technologies Used
 
-## Expanding the Oxlint configuration
+* React
+* TypeScript
+* Vite
+* CSS
 
-If you are developing a production application, we recommend enabling type-aware lint rules by installing `oxlint-tsgolint` and editing `.oxlintrc.json`:
+## Project Structure
 
-```json
-{
-  "$schema": "./node_modules/oxlint/configuration_schema.json",
-  "plugins": ["react", "typescript", "oxc"],
-  "options": {
-    "typeAware": true
-  },
-  "rules": {
-    "react/rules-of-hooks": "error",
-    "react/only-export-components": ["warn", { "allowConstantExport": true }]
-  }
-}
+```text
+src/
+├── components/
+│   ├── Header.tsx
+│   ├── Post.tsx
+│   └── PostList.tsx
+├── hoc/
+│   └── withLogger.tsx
+├── styles/
+│   └── blog.css
+├── types/
+│   └── Post.ts
+├── App.tsx
+└── main.tsx
 ```
 
-See the [Oxlint rules documentation](https://oxc.rs/docs/guide/usage/linter/rules) for the full list of rules and categories.
+## How to Run the Project
+
+First, clone the repository:
+
+```bash
+git clone https://github.com/Esther447/react-dev-formative-1.git
+```
+
+Then go into the project:
+
+```bash
+cd react-dev-formative-1
+```
+
+Install the packages:
+
+```bash
+npm install
+```
+
+Start the development server:
+
+```bash
+npm run dev
+```
+
+To build the project:
+
+```bash
+npm run build
+```
+
+## Components
+
+I used functional components for this project because they are simple and easy to work with.
+
+The `Header` component shows the Dev Insights name and the New Post link.
+
+The `PostList` component contains the sample posts.
+
+The `Post` component is reusable and displays the information for each post.
+
+## Styling
+
+I used an external CSS file called `blog.css` for the main styling.
+
+I also used inline styling in the `Header` component.
+
+For conditional styling, I highlighted posts written by Esther with a different style.
+
+## Optimization
+
+I used `React.memo` with the `Post` component.
+
+I also used a unique `key` for each post when displaying the list.
+
+## Higher-Order Component
+
+I created a simple `withLogger` HOC.
+
+It logs a message when a component is mounted and unmounted.
+
+I applied it to the `Header` component.
+
+## Challenges
+
+One challenge I had was understanding how the different components work together.
+
+I also had to learn how to use TypeScript types with React components.
+
+Working on `React.memo` and the HOC also helped me understand how React components can be optimized and reused.
+
+## Packages
+
+I used the packages that came with the React TypeScript Vite project, including:
+
+* React
+* React DOM
+* TypeScript
+* Vite
+
+## Author
+
+Esther Mushimiyimana
+
+GitHub: https://github.com/Esther447
