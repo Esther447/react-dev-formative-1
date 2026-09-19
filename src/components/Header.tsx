@@ -1,3 +1,5 @@
+import withLogger from "../hoc/withLogger";
+
 function Header() {
   return (
     <header>
@@ -10,4 +12,4 @@ function Header() {
   );
 }
 
-export default Header;
+export default withLogger(Header, "Header");
