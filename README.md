@@ -74,6 +74,12 @@ To build the project:
 npm run build
 ```
 
+## Testing
+
+This project does not have a separate testing library yet.
+
+I used `npm run build` to check that the TypeScript and React code builds successfully without errors.
+
 ## Components
 
 I used functional components for this project because they are simple and easy to work with.
