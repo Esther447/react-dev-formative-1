@@ -65,3 +65,28 @@ article p {
   border-left: 5px solid #2563eb;
   background-color: #eff6ff;
 }
+
+.post-title-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 8px;
+}
+
+.post-title-row h2 {
+  margin: 0;
+}
+
+.new-badge {
+  background-color: #16a34a;
+  color: white;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 2px 8px;
+  border-radius: 12px;
+  white-space: nowrap;
+}
+
+.post-preview {
+  margin: 8px 0;
+}

@@ -92,11 +92,13 @@ The `Post` component is reusable and displays the information for each post.
 
 ## Styling
 
-I used an external CSS file called `blog.css` for the main styling.
+I used an external CSS file (`blog.css`) for the main layout and component styles.
 
-I also used inline styling in the `Header` component.
+I also used inline styles in the `Header` component (e.g. `letterSpacing` on the `h1`).
 
-For conditional styling, I highlighted posts written by Esther with a different style.
+For conditional styling, I implemented two cases:
+- Posts written by **Esther** are highlighted with a blue left border and a light blue background.
+- Posts published within the **last 24 hours** show a green **"New!"** badge next to the title.
 
 ## Optimization
 
